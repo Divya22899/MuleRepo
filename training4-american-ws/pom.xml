@@ -30,18 +30,13 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-				
-					<cloudHubDeployment>
-						<uri>https://anypoint.mulesoft.com</uri>
-						<username>Divya22899</username>
-						<password>Divya22899</password>
-						<environment>Sandbox</environment>
-						<muleVersion>4.3.0</muleVersion>
-						<workers>1</workers>
-						<workerType>Micro</workerType>
-						<applicationName>training4-american-ws</applicationName>
-						<objectStoreV2>true</objectStoreV2>
-					</cloudHubDeployment>
+					<sharedLibraries>
+						<sharedLibrary>
+							<groupId>mysql</groupId>
+							<artifactId>mysql-connector-java</artifactId>
+						</sharedLibrary>
+					</sharedLibraries>
+					
 				</configuration>
 			</plugin>
 		</plugins>
